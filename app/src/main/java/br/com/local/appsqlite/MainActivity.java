@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             bd.execSQL("INSERT INTO tbPessoas(nome,idade)VALUES('Maria',50)");
             bd.execSQL("INSERT INTO tbPessoas(nome,idade)VALUES('João',60)");
 
+
             //Buscando os dados na tabela
             Cursor cursor = bd.rawQuery("SELECT nome, idade FROM tbPessoas", null);
 
